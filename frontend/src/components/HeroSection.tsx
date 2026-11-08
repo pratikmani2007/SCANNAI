@@ -7,7 +7,7 @@ export const HeroSection: React.FC = () => {
       {/* Small Badge */}
       <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-700/60 text-cyan-300 text-xs font-mono font-medium tracking-wide mb-4 shadow-sm shadow-cyan-950">
         <Lock className="w-3.5 h-3.5 text-cyan-400" />
-        <span>DETERMINISTIC • OFFLINE ANALYSIS</span>
+        <span>DETERMINISTIC • EXPLAINABLE ANALYSIS</span>
       </div>
 
       {/* Main Heading */}
@@ -45,10 +45,10 @@ export const HeroSection: React.FC = () => {
         <div className="p-3 rounded-lg bg-cyber-surface/60 border border-slate-800/80 backdrop-blur-sm">
           <div className="flex items-center space-x-2 text-teal-400 text-xs font-mono font-semibold mb-1">
             <Lock className="w-3.5 h-3.5" />
-            <span>ZERO CLOUD LEAKAGE</span>
+            <span>ZERO 3RD-PARTY AI LEAKAGE</span>
           </div>
           <p className="text-[12px] text-slate-400 leading-snug">
-            No cloud APIs or third-party servers. All evidence analyzed strictly in local memory.
+            No commercial LLMs or third-party AI APIs called. Forensic knowledge base runs strictly in-engine.
           </p>
         </div>
       </div>

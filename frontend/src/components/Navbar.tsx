@@ -16,6 +16,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onRefreshHealth,
 }) => {
   const isOnline = health?.status === 'healthy';
+  const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+  const docsUrl = apiBase ? `${apiBase.replace(/\/$/, '')}/docs` : '/docs';
 
   return (
     <header className="border-b border-cyber-cardBorder bg-cyber-surface/80 backdrop-blur-md sticky top-0 z-50">
@@ -66,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="tracking-wide">SYSTEM ONLINE</span>
                   <span className="text-[10px] text-emerald-400/70 hidden md:inline">
-                    (100% OFFLINE)
+                    (DETERMINISTIC)
                   </span>
                 </>
               ) : (
@@ -85,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* OpenAPI Docs Link */}
             <a
-              href="http://127.0.0.1:8000/docs"
+              href={docsUrl}
               target="_blank"
               rel="noreferrer"
               className="text-slate-400 hover:text-cyan-300 transition-colors p-1.5 rounded hover:bg-slate-800/60 flex items-center text-xs space-x-1"
@@ -101,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {healthError && (
         <div className="bg-rose-950/90 border-t border-rose-800/60 px-4 py-1.5 text-center text-xs text-rose-300 flex items-center justify-center space-x-2">
           <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
-          <span>Backend not reachable at http://127.0.0.1:8000. Start backend using `python backend/main.py`.</span>
+          <span>Backend not reachable{apiBase ? ` at ${apiBase}` : ''}. Please ensure the SCANNAI backend service is running.</span>
         </div>
       )}
     </header>
