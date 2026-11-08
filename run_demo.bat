@@ -1,5 +1,5 @@
 @echo off
-title SCANNAI — Cybercrime & Scam Awareness Intelligence
+title SCANNAI — Cybercrime ^& Scam Awareness Intelligence
 echo ===============================================================================
 echo                SCANNAI — Team ROCKERZ Demonstration Launcher
 echo ===============================================================================
