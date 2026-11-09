@@ -54,9 +54,9 @@ By cross-referencing incoming demands against official procedural safeguards (th
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        SCANNAI FRONTEND (React 18)                     │
-│  - Single-Page Responsive Dashboard (Tailwind CSS + Lucide Icons)       │
+│  - Single-Page Responsive Dashboard (Tailwind CSS + Lucide Icons)      │
 │  - 5 One-Click Scenario Demonstration Presets                          │
-│  - Circular SVG Risk Gauge & Statutory Violation Comparison Cards       │
+│  - Circular SVG Risk Gauge & Statutory Violation Comparison Cards      │
 │  - Drag-and-Drop Evidence Ingestion (PDF / Images up to 25 MB)         │
 │  - Dynamic Health Beacon polling /api/v1/health                        │
 └───────────────────────────────────┬────────────────────────────────────┘
@@ -77,9 +77,9 @@ By cross-referencing incoming demands against official procedural safeguards (th
 │  │                Deterministic Threat & Rule Engine                │  │
 │  │                                                                  │  │
 │  │  1. Threat Vector Extractor (Impersonation, Urgency, Secrecy)    │  │
-│  │  2. Procedural Fallacy KB (PROC-IND-001 to 006 Statutory Rules)   │  │
-│  │  3. False-Positive Context Shields (e-Courts, TSPs, Banking)      │  │
-│  │  4. Deduplication & Score Clamping (85 Floor, 100 Ceiling)        │  │
+│  │  2. Procedural Fallacy KB (PROC-IND-001 to 006 Statutory Rules)  │  │
+│  │  3. False-Positive Context Shields (e-Courts, TSPs, Banking)     │  │
+│  │  4. Deduplication & Score Clamping (85 Floor, 100 Ceiling)       │  │
 │  └──────────────────────────────────────────────────────────────────┘  │
 └────────────────────────────────────────────────────────────────────────┘
 ```
